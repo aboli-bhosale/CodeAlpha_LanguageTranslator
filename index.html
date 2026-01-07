@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Language Translation Tool</h2>
+
+<form method="POST">
+    <textarea name="text" placeholder="Enter text" required></textarea>
+
+    <br><br>
+
+    <select name="source">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="mr">Marathi</option>
+    </select>
+
+    <select name="target">
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="mr">Marathi</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Translate</button>
+</form>
+
+<h3>Translated Text:</h3>
+<p>{{ output }}</p>
+
+</body>
+</html>
